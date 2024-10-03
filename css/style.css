@@ -325,9 +325,20 @@ nav ul li a {
     html {
         font-size: calc(1.5*62.5%);
     }
+
     nav {
         display: block
     }
+
+    header {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .header-img.hamburger {
+        display: none;
+    }
+
     main {
         width: 75%;
         margin: 0 auto;
@@ -350,10 +361,6 @@ nav ul li a {
         width: 60%;
         margin: 0 auto;
     }
-
-    .header-img.hamburger {
-        display: none;
-    } 
 
     .menu-container {
         column-gap: 1rem;
