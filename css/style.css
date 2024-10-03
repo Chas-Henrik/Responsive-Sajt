@@ -4,16 +4,178 @@
     padding: 0;
 }
 
+:root {
+    --primary-background-color: #4A154C;
+    --secondary-color: #ECDEED;
+}   
+
 html {
     font-family: 'Roboto', sans-serif;
     font-size: 62.5%;
+}
+
+body {
+    background:  var(--primary-background-color);
+    margin: 5%
+}
+
+main {
+    max-width: 1200px;
+    width: 80%;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 4rem;
 }
 
 h1 {
     font-size: 4.5rem;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: none
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+}
 .header-img {
     width: 50px;
     height: auto
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.magnifyer , .hamburger {
+    filter: invert(100%);
+}
+
+.workspace-frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.workspace-main-container {
+    border-radius: 10px;
+    border: 4px solid #6E4370;
+    width: 100%;
+}
+
+.workspace-container {
+    background-color: #ECDEED;
+    padding: 2rem;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.chas-container {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.chas-container p {
+    text-align: center;
+    width: 100%;
+    margin-top: 5px
+}
+.chas-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.chas-container:hover .people-container {
+    background-color: red;
+    width: 200px;
+}
+
+.people-container {
+    display: flex;
+}
+
+.people-container img {
+    width: 2rem;
+    height: auto;
+}
+
+
+.chas-container button {
+    background-color: var(--primary-background-color);
+    width: 60%;
+    flex-basis: 100%;
+    color: white;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.workspace-frame h1 {
+    color: white
+}
+
+.workspace-text {
+    font-size: 1.5rem;
+}
+
+.second-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 4px solid #6E4370;
+    width: 100%;
+    background-color: white;
+    row-gap: 2rem;
+    position: relative;
+    border-radius: 10px;
+}
+
+.second-section img {
+    align-self: flex-start;
+    margin-bottom: -31px;
+}
+
+.second-section button {
+    background-color: white;
+    border-color: #6E4370;
+    width: 90%;
+    margin: auto;
+    border: 1px solid #6E4370;
+    border-radius: 5px;
+    padding: 1rem
+}
+
+@media screen and (min-width: 768px) {
+    
 }
