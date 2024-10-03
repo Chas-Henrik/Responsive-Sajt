@@ -5,8 +5,10 @@
 }
 
 :root {
+    --primary-color: white;
     --primary-background-color: #4A154C;
     --secondary-color: #ECDEED;
+    --link-color: #6A8FBF;
 }   
 
 html {
@@ -73,7 +75,7 @@ nav ul li a {
     filter: invert(100%);
 }
 
-.workspace-frame {
+.first-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,28 +100,94 @@ nav ul li a {
 }
 
 .chas-container {
-    background-color: white;
+    background-color: var(--primary-color);
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    row-gap: 1.5rem;
 }
 
-.chas-container p {
+.chas-container h2 {
+    margin-bottom: 10px;
+}
+
+.chas-container:hover .person1 {
+    animation-name: myimage;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.chas-container:hover .person2 {
+    animation-name: myimage;
+    animation-duration: 2s;
+    animation-delay: 0.1s;
+    animation-iteration-count: infinite;
+}
+
+.chas-container:hover .person3 {
+    animation-name: myimage;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+}
+
+.chas-container:hover .person4 {
+    animation-name: myimage;
+    animation-duration: 2s;
+    animation-delay: 0.3s;
+    animation-iteration-count: infinite;
+}
+
+.chas-container:hover .person5 {
+    animation-name: myimage;
+    animation-duration: 2s;
+    animation-delay: 0.4s;
+    animation-iteration-count: infinite;
+}
+
+.people-container {
+    display: flex;
+    position: relative;
+}
+
+.people-container img {
+    width: 32px;
+    height: auto;
+    bottom: 0;
+}
+
+.chas-container > p {
     text-align: center;
     width: 100%;
-    margin-top: 5px
+    margin-top: 1rem;
+    color: var(--link-color);
 }
+
+.chas-container:hover .people-container {
+    width: 200px;
+}
+
 .chas-content {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-.chas-container:hover .people-container {
-    background-color: red;
-    width: 200px;
+.chas-members-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.chas-members-container h2 {
+    letter-spacing: 0.1rem;
+}
+
+.people-members-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
 }
 
 .people-container {
@@ -131,18 +199,18 @@ nav ul li a {
     height: auto;
 }
 
-
 .chas-container button {
     background-color: var(--primary-background-color);
     width: 60%;
     flex-basis: 100%;
-    color: white;
+    color: var(--primary-color);
     border-radius: 5px;
     padding: 1rem;
 }
 
-.workspace-frame h1 {
-    color: white
+.first-section h1 {
+    color: var(--primary-color);
+    align-self: self-start;
 }
 
 .workspace-text {
@@ -153,29 +221,74 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 4px solid #6E4370;
+    border: 4px solid var(--primary-background-color);
     width: 100%;
-    background-color: white;
+    background-color: var(--primary-color);
     row-gap: 2rem;
     position: relative;
     border-radius: 10px;
 }
 
-.second-section img {
-    align-self: flex-start;
-    margin-bottom: -31px;
+.second-section p {
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    order: 1;
 }
 
 .second-section button {
-    background-color: white;
-    border-color: #6E4370;
+    background-color: var(--primary-color);
+    border-color: var(--primary-background-color);
+    color: var(--primary-background-color);
     width: 90%;
-    margin: auto;
-    border: 1px solid #6E4370;
+    margin: 0 auto;
+    border: 1px solid var(--primary-background-color);
     border-radius: 5px;
-    padding: 1rem
+    padding: 1rem;
+    order: 2;
+}
+
+.second-section img {
+    align-self: flex-start;
+    margin-bottom: -31px;
+    order: 3;
+}
+
+.third-section {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: 0.1em;
+    text-align: center;
+    
+}
+
+.third-section p {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.third-section a {
+    text-decoration: none;
+    color: var(--link-color);
 }
 
 @media screen and (min-width: 768px) {
     
+}
+
+@keyframes myimage {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
 }
