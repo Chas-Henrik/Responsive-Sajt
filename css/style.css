@@ -12,6 +12,7 @@
 }   
 
 html {
+    min-width: 250px;
     font-family: 'Roboto', sans-serif;
     font-size: 62.5%;
 }
