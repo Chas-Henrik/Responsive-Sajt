@@ -18,31 +18,30 @@ html {
 
 body {
     background:  var(--primary-background-color);
-    margin: 5rem;
-}
-
-main {
-    max-width: 1200px;
-    width: 80%;
-    margin: auto;
-}
-
-section {
-    margin-bottom: 4rem;
-}
-
-h1 {
-    font-size: 4.5rem;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 1rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 5rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2.2rem;
 }
 
 .logo-container img {
-    width: 100px;
+    width: 8rem;
     height: auto;
 }
 
@@ -52,20 +51,24 @@ nav {
 
 nav ul {
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0rem;
     list-style: none;
 }
 
 nav ul li {
-    margin: 0 1rem;
+    margin: 0 0.5rem;
 }
 
 nav ul li a {
+    font-size: 0.8rem;
     color: #fff;
     text-decoration: none;
-    padding: 1rem;
+    padding: 0.4rem;
 }
 .header-img {
-    width: 50px;
+    width: 5rem;
     height: auto
 }
 
@@ -73,7 +76,7 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .menu-container button {
@@ -81,10 +84,12 @@ nav ul li a {
 }
 
 .magnifyer {
-    margin-right: 4rem;
+    margin-right: 2rem;
 }
 
 .magnifyer , .hamburger {
+    width: 2rem;
+    height: auto;
     filter: invert(100%);
 }
 
@@ -97,6 +102,15 @@ nav ul li a {
 
 }
 
+.first-section > h1 {
+    margin-bottom: 1rem;
+}
+
+.first-section > h1 > img {
+    width: 3rem;
+    height: auto;
+}
+
 .workspace-main-container {
     background-color: var(--primary-color);
     border-radius: 10px;
@@ -107,16 +121,20 @@ nav ul li a {
 .workspace-main-container > p {
     text-align: center;
     width: 100%;
-    margin-top: 1rem;
+    margin: 1rem 0;
     color: var(--link-color);
 }
 
 .workspace-container {
     background-color: #ECDEED;
-    padding: 2rem;
+    padding: 1rem;
     overflow: hidden;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+.workspace-container > p {
+    font-size: 1rem;
 }
 
 .chas-container {
@@ -126,11 +144,11 @@ nav ul li a {
     padding: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    row-gap: 1.5rem;
+    row-gap: 0.75rem;
 }
 
 .chas-container h2 {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 .chas-container:hover .person1 {
@@ -181,23 +199,28 @@ nav ul li a {
 .chas-content {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
     margin-left: 5%;
+}
+
+.chas-content > img {
+    width: 5rem;
+    height: auto;
 }
 
 .chas-members-container {
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
+    row-gap: 0.5rem;
 }
 .chas-members-container h2 {
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.05rem;
 }
 
 .people-members-container {
     display: flex;
     flex-direction: row;
-    column-gap: 1rem;
+    column-gap: 0.5rem;
 }
 
 .people-container {
@@ -205,17 +228,17 @@ nav ul li a {
 }
 
 .people-container img {
-    width: 2rem;
+    width: 1rem;
     height: auto;
 }
 
 .chas-container button {
+    font-size: 1rem;
     background-color: var(--primary-background-color);
     width: 90%;
-    /* flex-basis: 100%; */
     color: var(--primary-color);
     border-radius: 5px;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     margin: auto;
 }
 
@@ -225,7 +248,7 @@ nav ul li a {
 }
 
 .workspace-text {
-    font-size: 1.5rem;
+    font-size: 0.75rem;
 }
 
 .second-section {
@@ -236,20 +259,23 @@ nav ul li a {
     border: 4px solid var(--primary-background-color);
     width: 100%;
     background-color: var(--primary-color);
-    row-gap: 2rem;
+    row-gap: 1rem;
     border-radius: 10px;
 }
 
-.second-section p {
+.second-section > p {
     margin-top: 5%;
     margin-left: 5%;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05rem;
+    align-self: flex-start;
     order: 1;
 }
 
 .second-section button {
+    font-size: 0.8rem;
+    font-weight: 700;
     background-color: var(--primary-color);
     border-color: var(--primary-background-color);
     color: var(--primary-background-color);
@@ -257,36 +283,47 @@ nav ul li a {
     margin: 0 auto;
     border: 1px solid var(--primary-background-color);
     border-radius: 5px;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     order: 2;
 }
 
 .second-section img {
+    width: 10rem;
+    height: auto;
     align-self: flex-start;
-    margin-bottom: -31px;
+    margin-bottom: -1.6rem;
     order: 3;
 }
 
 .third-section {
-    font-size: 1.8rem;
+    font-size: 0.9rem;
     font-weight: 600;
-    line-height: 2rem;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05rem;
     text-align: center;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 .third-section p {
+    font-size: 1.2rem;
+    font-weight: 400;
     color: var(--primary-color);
-    margin-bottom: 1rem;
 }
 
 .third-section a {
+    font-size: 1.2rem;
+    font-weight: 400;
     text-decoration: none;
     color: var(--link-color);
 }
 
 @media screen and (min-width: 768px) {
+    html {
+        font-size: calc(1.5*62.5%);
+    }
     nav {
         display: block
     }
@@ -295,17 +332,23 @@ nav ul li a {
 
 @media screen and (min-width: 1200px) {
 
+    html {
+        font-size: calc(2*62.5%);
+    }
+
     .header-img.hamburger {
         display: none;
     } 
 
     .menu-container {
         column-gap: 1rem;
+        margin-left: auto;
     }
 
     .menu-container button {
+        font-size: 0.5rem;
         display: block;
-        padding: 10px;
+        padding: 0.5rem;
         border-radius: 5px;
         border: 1px solid var(--primary-color);
     }
@@ -320,8 +363,7 @@ nav ul li a {
     }
 
     .chas-container button {
-        width: 300px;
-        margin-left: auto;
+        width: fit-content;
         margin-right: 0;
     }
 
@@ -332,7 +374,7 @@ nav ul li a {
         padding-right: 10px;
     }
 
-    .second-section p {
+    .second-section > p {
         height: 100%;
         order: 2;
         align-self: center;
@@ -348,6 +390,10 @@ nav ul li a {
     
     .second-section img {
         order: 1;
+    }
+
+    .third-section {
+        flex-direction: row;
     }
 }
 
